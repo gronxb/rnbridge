@@ -1,6 +1,5 @@
+import type { Bridge } from "@rnbridge/util";
 import { createEvents } from "@rnbridge/util";
-
-import type { Bridge } from "./types";
 
 export const registerWebMethod: Bridge = (bridge) => {
   if (!window.ReactNativeWebView) {

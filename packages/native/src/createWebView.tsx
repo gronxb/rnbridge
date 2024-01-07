@@ -1,3 +1,4 @@
+import type { Procedure, ProceduresObject } from "@rnbridge/util";
 import { createEvents } from "@rnbridge/util";
 import { forwardRef, useImperativeHandle, useMemo, useRef } from "react";
 import React from "react";
@@ -12,7 +13,7 @@ import {
   LogType,
 } from "./integrations";
 import { handleRegisterWebMethod } from "./integrations/handleRegisterWebMethod";
-import type { Procedure, ProceduresObject, RNBridgeWebView } from "./types";
+import { RNBridgeWebView } from "./types";
 
 export type CreateWebViewArgs<
   T extends ProceduresObject<Record<string, Procedure>>,

@@ -1,6 +1,5 @@
+import type { Bridge, Procedure, ProceduresObject } from "@rnbridge/util";
 import WebView from "react-native-webview";
-
-import type { Bridge, Procedure, ProceduresObject } from "../types";
 
 export const bridge: Bridge = (procedures) => {
   return procedures;
